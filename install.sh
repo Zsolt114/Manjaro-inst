@@ -1,3 +1,4 @@
+#!/bin/sh
 # Upgrade all
 
 sudo pacman -Syyu;
