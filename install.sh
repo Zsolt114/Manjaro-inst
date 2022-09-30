@@ -17,31 +17,32 @@ sudo pacman -S --noconfirm archlinux-keyring qemu virt-manager virt-viewer dnsma
 
 # Install AUR
 
-sudo pamac install vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-flatpak-plugin;
+sudo pamac install --no-confirm vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-flatpak-plugin;
 
 # Install Flatpak
 
-sudo flatpak install bottles;
+sudo flatpak install --noninteractive bottles;
 
 # Install Garuda Package Repository
 
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-sudo pacman-key --lsign-key FBA220DFC880C036
-sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
+sudo pacman-key --lsign-key FBA220DFC880C036;
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst';
 sudo nano /etc/pacman.conf >> "[chaotic-aur]
-                                Include = /etc/pacman.d/chaotic-mirrorlist"
+                                Include = /etc/pacman.d/chaotic-mirrorlist";
 # Install Garuda Install
 
-mkdir git
-cd git
-git clone https://gitlab.com/garuda-linux/applications/garuda-gamer.git
-git clone https://gitlab.com/garuda-linux/applications/garuda-libs.git
-sudo pacman -S alacritty-git 
-sudo pacman -S expect
-cd garuda-libs
-makepkg
-sudo pacman -U garuda-libs*any.pkg*
-cd ..
-cd garuda-gamer
-makepkg
-sudo pacman -U garuda-gamer*any.pkg*
+cd;
+mkdir git;
+cd git;
+git clone https://gitlab.com/garuda-linux/applications/garuda-gamer.git;
+git clone https://gitlab.com/garuda-linux/applications/garuda-libs.git;
+sudo pacman -S --noconfirm alacritty-git;
+sudo pacman -S --noconfirm expect;
+cd garuda-libs;
+makepkg;
+sudo pacman -U --noconfirm garuda-libs*any.pkg*;
+cd ..;
+cd garuda-gamer;
+makepkg;
+sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
