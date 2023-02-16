@@ -15,7 +15,7 @@ sudo pacman -Syyu
 
 sudo pacman -S --noconfirm mysql pidgin plank openssh  wine tk libreoffice-fresh nethogs python-pip docker
 sudo pacman -S --noconfirm vim synapse samba pamac-gtk steam
-sudo pacman -S --noconfirm lutris
+sudo pacman -S --noconfirm lutris grafx2
 sudo pacman -S --noconfirm discord
 sudo pacman -S --noconfirm obs-studio
 sudo pacman -S --noconfirm virtualbox
