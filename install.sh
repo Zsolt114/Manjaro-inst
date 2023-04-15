@@ -23,6 +23,7 @@ sudo pacman -S --noconfirm easyeffects
 sudo pacman -S --noconfirm winetricks
 sudo pacman -S --noconfirm make
 sudo pacman -S --noconfirm archlinux-keyring qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
+sudo pacman -S --noconfirm lolcat
 
 # Install AUR
 
