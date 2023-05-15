@@ -21,5 +21,5 @@ cd cursors;
 ./install.sh;
 cd;
 cd .local/share/icons/;
-mv Fluent-cursors ~/.icons/;
-mv Fluent-dark-cursors ~/.icons/;
+mv Fluent ~/.icons/;
+mv Fluent-dark ~/.icons/;
