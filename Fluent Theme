@@ -10,6 +10,8 @@ git clone https://github.com/vinceliuice/Fluent-gtk-theme.git;
 git clone https://github.com/vinceliuice/Fluent-icon-theme.git;
 cd Fluent-kde;
 ./install.sh -t purple -c dark --rounded;
+cd sddn;
+./install.sh;
 cd;
 cd Fluent-gtk-theme;
 ./install.sh -t purple -c dark --rounded -s -i manjaro;
