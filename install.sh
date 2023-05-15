@@ -27,7 +27,7 @@ sudo pacman -S --noconfirm lolcat
 
 # Install AUR
 
-sudo pamac install --no-confirm vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-flatpak-plugin zeal;
+sudo pamac install --no-confirm vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-flatpak-plugin zeal kvantum-qt5;
 
 # Install Flatpak
 
