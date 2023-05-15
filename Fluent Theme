@@ -1,0 +1,12 @@
+cd;
+mkdir git;
+cd git;
+git clone https://gitlab.com/garuda-linux/applications/garuda-gamer.git;
+git clone https://gitlab.com/garuda-linux/applications/garuda-libs.git;
+cd garuda-libs;
+makepkg;
+sudo pacman -U --noconfirm garuda-libs*any.pkg*;
+cd ..;
+cd garuda-gamer;
+makepkg;
+sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
