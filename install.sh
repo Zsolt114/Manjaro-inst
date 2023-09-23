@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# anytype logseq
 
 # Prepare pacman
 sudo mkdir -p /root/.gnupg
