@@ -34,13 +34,16 @@ sudo pamac install --no-confirm vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-f
 sudo flatpak install --noninteractive bottles;
 
 # Install Garuda Package Repository
-
-sudo pacman -S --needed base-devel
+sudo pamac install --no-confirm powerpill;
+sudo pacman -S --needed --noconfirm base-devel;
 git clone https://aur.archlinux.org/paru.git
 cd paru
-makepkg -si
+makepkg -si --noconfirm
+
 sudo pacman -Sy && sudo powerpill -Su && paru -Su;
-# Install Garuda Package Repository
+
+
+# Install Garuda Package Repository2
 sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com;
 sudo pacman-key --lsign-key 3056513887B78AEB;
 sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst';
