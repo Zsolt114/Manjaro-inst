@@ -62,3 +62,9 @@ sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
 # Install PyPI
 python -m pip install konsave
 
+
+# Install Snapcraft
+sudo pacman -S snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install eclipse --classic
