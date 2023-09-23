@@ -32,7 +32,7 @@ sudo pamac install --no-confirm vivaldi vivaldi-ffmpeg-codecs flatpak libpamac-f
 # Install Flatpak
 
 sudo flatpak install --noninteractive bottles;
-
+sudo flatpak install --noninteractive org.zealdocs.Zeal;
 # Install Garuda Package Repository
 sudo pamac install --no-confirm powerpill;
 sudo pacman -S --needed --noconfirm base-devel;
