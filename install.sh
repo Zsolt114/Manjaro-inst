@@ -7,7 +7,7 @@ sudo pacman-key --init && sudo pacman-key --populate archlinux manjaro && sudo p
 
 # Upgrade all
 
-sudo pacman -Syyu
+sudo pacman -Syyu --noconfirm
 
 
 
