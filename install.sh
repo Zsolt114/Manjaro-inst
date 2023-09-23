@@ -35,17 +35,17 @@ sudo flatpak install --noninteractive bottles;
 
 # Install Garuda Package Repository
 
-sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com;
-sudo pacman-key --lsign-key FBA220DFC880C036;
+sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com;
+sudo pacman-key --lsign-key 3056513887B78AEB;
 sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst';
 sudo -- sh -c "echo '[chaotic-aur]
 Include = /etc/pacman.d/chaotic-mirrorlist' >> /etc/pacman.conf";
-
+sudo pacman -Sy && sudo powerpill -Su && paru -Su;
 
 
 # Install Garuda Install
-sudo pacman -Sy --noconfirm alacritty-git
-sudo pacman -Sy --noconfirm expect
+sudo pacman -Sy --noconfirm alacritty-git;
+sudo pacman -Sy --noconfirm expect;
 cd;
 mkdir git;
 cd git;
@@ -60,11 +60,11 @@ makepkg;
 sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
 
 # Install PyPI
-python -m pip install konsave
+python -m pip install konsave;
 
 
 # Install Snapcraft
-sudo pacman -S --noconfirm snapd
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install eclipse --classic
+sudo pacman -S --noconfirm snapd;
+sudo systemctl enable --now snapd.socket;
+sudo ln -s /var/lib/snapd/snap /snap;
+sudo snap install eclipse --classic;
