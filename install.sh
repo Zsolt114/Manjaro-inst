@@ -16,7 +16,7 @@ sudo pacman -Syyu --noconfirm
 sudo pacman -S --noconfirm mysql pidgin plank openssh  wine tk libreoffice-fresh nethogs python-pip docker
 sudo pacman -S --noconfirm vim synapse samba pamac-gtk steam
 sudo pacman -S --noconfirm lutris grafx2
-sudo pacman -S --noconfirm discord
+# sudo pacman -S --noconfirm discord
 sudo pacman -S --noconfirm obs-studio
 sudo pacman -S --noconfirm virtualbox
 sudo pacman -S --noconfirm easyeffects
@@ -54,13 +54,29 @@ sudo pacman -Sy && sudo powerpill -Su && paru -Su;
 
 
 # Install Garuda Install
+#sudo pacman -Sy --noconfirm alacritty-git;
+#sudo pacman -Sy --noconfirm expect;
+#cd;
+#mkdir git;
+#cd git;
+#git clone https://gitlab.com/garuda-linux/applications/garuda-gamer.git;
+#git clone https://gitlab.com/garuda-linux/applications/garuda-libs.git;
+#cd garuda-libs;
+#makepkg;
+#sudo pacman -U --noconfirm garuda-libs*any.pkg*;
+#cd ..;
+#cd garuda-gamer;
+#makepkg;
+#sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
+
+# Install Garuda Install
 sudo pacman -Sy --noconfirm alacritty-git;
 sudo pacman -Sy --noconfirm expect;
 cd;
 mkdir git;
 cd git;
-git clone https://gitlab.com/garuda-linux/applications/garuda-gamer.git;
-git clone https://gitlab.com/garuda-linux/applications/garuda-libs.git;
+git clone https://gitlab.com/garuda-linux/pkgbuilds.git;
+cd pkgbuilds;
 cd garuda-libs;
 makepkg;
 sudo pacman -U --noconfirm garuda-libs*any.pkg*;
@@ -77,5 +93,9 @@ python -m pip install konsave;
 sudo pacman -S --noconfirm snapd;
 sudo systemctl enable --now snapd.socket;
 sudo ln -s /var/lib/snapd/snap /snap;
+sudo pacman -S --noconfirm snapd;
+sudo systemctl enable --now snapd.socket;
+sudo ln -s /var/lib/snapd/snap /snap;
 sudo snap install eclipse --classic;
 sudo snap install pycharm-community --classic;
+sudo snap install discord
