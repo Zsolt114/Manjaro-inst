@@ -93,9 +93,9 @@ python -m pip install konsave;
 sudo pacman -S --noconfirm snapd;
 sudo systemctl enable --now snapd.socket;
 sudo ln -s /var/lib/snapd/snap /snap;
-sudo pacman -S --noconfirm snapd;
 sudo systemctl enable --now snapd.socket;
 sudo ln -s /var/lib/snapd/snap /snap;
 sudo snap install eclipse --classic;
 sudo snap install pycharm-community --classic;
 sudo snap install discord
+sudo snap install rustrover --edge --classic
