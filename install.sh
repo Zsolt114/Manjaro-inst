@@ -24,6 +24,7 @@ sudo pacman -S --noconfirm winetricks
 sudo pacman -S --noconfirm make nodejs npm
 sudo pacman -S --noconfirm archlinux-keyring qemu virt-manager virt-viewer dnsmasq vde2 bridge-utils openbsd-netcat
 sudo pacman -S --noconfirm lolcat
+sudo pacman -S --noconfirm lolcat unrar
 
 # Install AUR
 
