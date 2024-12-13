@@ -86,6 +86,9 @@ cd garuda-gamer;
 makepkg;
 sudo pacman -U --noconfirm garuda-gamer*any.pkg*;
 
+##USER JOGOT KELL JAVITANI
+
+
 # Install PyPI
 python -m pip install konsave;
 
